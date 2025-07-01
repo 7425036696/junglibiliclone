@@ -15,7 +15,7 @@ import TableError from "@/components/shared/TableError";
 
 import { fetchOrders } from "@/data/orders";
 import { columns, skeletonColumns } from "./orders-table/columns";
-z
+
 export default function OrderFilters() {
   const [search, setSearch] = useState("");
   const [status, setStatus] = useState("");
