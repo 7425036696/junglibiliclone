@@ -15,7 +15,7 @@ A modern and responsive **Admin Panel** built with **Next.js**, **Supabase**, an
 ---
 
 ## preview 
-
+https://junglibiliclone.vercel.app/
 
 ## 🔧 Features
 
