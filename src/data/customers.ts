@@ -2,7 +2,7 @@ import { createClient } from "@supabase/supabase-js";
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY! // ✅ Required for admin.listUsers()
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndicmFycmx2dm12a3h4enJlYWlpIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0OTcxMDA1MywiZXhwIjoyMDY1Mjg2MDUzfQ.pL1ezVssQVt1guYHMtjTHfZVwr1yJMMOeDV6BKbirgw" // ✅ Required for admin.listUsers()
 );
 export const fetchCustomers = async ({ search = "" }) => {
   let query = supabase.auth.admin.listUsers({
